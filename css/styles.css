@@ -29,7 +29,7 @@ body {
 }
 
 .web {
-  color: var(--primary);
+  color: var(--hero-bg);
 }
 
 .nav > .nav-link {
