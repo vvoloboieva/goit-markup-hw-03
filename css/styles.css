@@ -26,10 +26,11 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
+  color: var(--hero-bg);
 }
 
 .web {
-  color: var(--hero-bg);
+  color: var(--primary);
 }
 
 .nav > .nav-link {
