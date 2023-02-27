@@ -5,6 +5,8 @@
   --light: #f4f4fd;
   --pressed: #404bbf;
   --text: #434455;
+  --horizontal-gap: 24px;
+  --vertical-gap: 48px;
 }
 
 body {
@@ -16,6 +18,22 @@ body {
   padding: 0;
   border: 0;
   color: var(--hero-bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .wrapper {
@@ -68,7 +86,8 @@ body {
   text-transform: capitalize;
 }
 
-.title3 {
+.title3,
+.card-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -130,6 +149,7 @@ body {
 .hero > .title1 {
   color: white;
   text-align: center;
+  padding-top: 188px;
 }
 
 .hero-cta {
@@ -164,8 +184,20 @@ body {
 }
 
 .projects {
+  padding: 0;
+  margin: 0;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
+  margin-left: calc(-1 * var(--horizontal-gap));
+  margin-top: calc(-1 * var(--vertical-gap));
+}
+
+.projects > .project-item {
+  flex-basis: calc((100% / 3 - var(--horizontal-gap)));
+  list-style: none;
+  margin-left: var(--horizontal-gap);
+  margin-top: var(--vertical-gap);
 }
 
 .projects-nav {
@@ -210,9 +242,15 @@ body {
   font-style: normal;
 }
 
-.project-item {
-  flex-basis: calc((100%-2 * 24) / 3);
-  list-style: none;
+.card-content {
+  padding: 32px 16px;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.project-item-type {
+  margin-top: 8px;
 }
 
 .team {
@@ -226,6 +264,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--accent);
   min-height: 310px;
+  margin-top: 120px;
 }
 
 .footer .wrapper {
