@@ -263,15 +263,20 @@ img {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1 * var(--horizontal-gap));
-  margin-top: calc(-1 * var(--vertical-gap));
+  /* margin-left: calc(-1 * var(--horizontal-gap));
+  margin-top: calc(-1 * var(--vertical-gap)); */
 }
 
 .projects > .project-item {
-  flex-basis: calc((100% / 3 - var(--horizontal-gap)));
+  /* flex-basis: calc((100% / 3 - var(--horizontal-gap))); */
+  flex-basis: calc((100% - 2 * var(--horizontal-gap)) / 3);
   list-style: none;
   margin-left: var(--horizontal-gap);
   margin-top: var(--vertical-gap);
+}
+
+.projects > .project-item:nth-child(3n + 1) {
+  margin-left: 0;
 }
 
 .projects-nav {
