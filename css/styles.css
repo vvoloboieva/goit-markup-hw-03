@@ -279,6 +279,10 @@ img {
   margin-left: 0;
 }
 
+.projects > .project-item:nth-child(-n + 3) {
+  margin-top: 0;
+}
+
 .projects-nav {
   display: flex;
   justify-content: center;
