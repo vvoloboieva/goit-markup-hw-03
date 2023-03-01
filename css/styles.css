@@ -196,6 +196,11 @@ img {
   padding-bottom: var(--large-v-gap);
 }
 
+.section-portfolio {
+  padding-top: 96px;
+  padding-bottom: var(--large-v-gap);
+}
+
 .benefits {
   padding-bottom: 0;
 }
